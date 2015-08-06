@@ -1,0 +1,3258 @@
+Signature = XACT3;
+Version = 18;
+Content Version = 46;
+Release = February 2010;
+
+Options
+{
+    Verbose Report = 0;
+    Generate C/C++ Headers = 1;
+}
+
+Global Settings
+{
+    Xbox File = Xbox\music.xgs;
+    Windows File = Win\music.xgs;
+    Header File = C:\Users\Alex\Documents\Visual Studio 2010\Projects\Accelerated_Delivery_Win\Accelerated_Delivery_Win\Content\Music\music.h;
+    Exclude Category Names = 0;
+    Exclude Variable Names = 0;
+    Last Modified Low = 2408516576;
+    Last Modified High = 30303782;
+
+    Category
+    {
+        Name = Global;
+        Public = 1;
+        Background Music = 0;
+        Volume = 0;
+
+        Category Entry
+        {
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = Default;
+        Public = 1;
+        Background Music = 0;
+        Volume = 0;
+
+        Category Entry
+        {
+            Name = Global;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = Music;
+        Public = 1;
+        Background Music = 1;
+        Volume = -200;
+
+        Category Entry
+        {
+            Name = Global;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = SFX;
+        Public = 1;
+        Background Music = 0;
+        Volume = 450;
+
+        Category Entry
+        {
+            Name = Global;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Category
+    {
+        Name = machines;
+        Public = 1;
+        Background Music = 0;
+        Volume = 200;
+
+        Category Entry
+        {
+            Name = Global;
+        }
+
+        Instance Limit
+        {
+            Max Instances = 255;
+            Behavior = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Variable
+    {
+        Name = OrientationAngle;
+        Public = 1;
+        Global = 0;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = -180.000000;
+        Max = 180.000000;
+    }
+
+    Variable
+    {
+        Name = DopplerPitchScalar;
+        Public = 1;
+        Global = 0;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 1.000000;
+        Initial Value = 1.000000;
+        Min = 0.000000;
+        Max = 4.000000;
+    }
+
+    Variable
+    {
+        Name = SpeedOfSound;
+        Public = 1;
+        Global = 1;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 343.500000;
+        Initial Value = 343.500000;
+        Min = 0.000000;
+        Max = 1000000.000000;
+    }
+
+    Variable
+    {
+        Name = ReleaseTime;
+        Public = 1;
+        Global = 0;
+        Internal = 1;
+        External = 1;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 1;
+        Time = 1;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 15000.000000;
+    }
+
+    Variable
+    {
+        Name = AttackTime;
+        Public = 1;
+        Global = 0;
+        Internal = 1;
+        External = 1;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 1;
+        Time = 1;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 15000.000000;
+    }
+
+    Variable
+    {
+        Name = NumCueInstances;
+        Public = 1;
+        Global = 0;
+        Internal = 1;
+        External = 1;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 1;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 1024.000000;
+    }
+
+    Variable
+    {
+        Name = Distance;
+        Public = 1;
+        Global = 0;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 1;
+        Read Only = 0;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 0.000000;
+        Min = 0.000000;
+        Max = 300.000000;
+    }
+
+    Variable
+    {
+        Name = TrackNumber;
+        Public = 1;
+        Global = 1;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 0;
+        Read Only = 0;
+        Time = 0;
+        Value = 0.000000;
+        Initial Value = 1.000000;
+        Min = 0.000000;
+        Max = 8.000000;
+    }
+
+    Variable
+    {
+        Name = BGMVolume;
+        Public = 1;
+        Global = 1;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 0;
+        Read Only = 0;
+        Time = 0;
+        Value = 100.000000;
+        Initial Value = 100.000000;
+        Min = 0.000000;
+        Max = 100.000000;
+    }
+
+    Variable
+    {
+        Name = SFXVolume;
+        Public = 1;
+        Global = 1;
+        Internal = 0;
+        External = 0;
+        Monitored = 1;
+        Reserved = 0;
+        Read Only = 0;
+        Time = 0;
+        Value = 100.000000;
+        Initial Value = 100.000000;
+        Min = 0.000000;
+        Max = 100.000000;
+    }
+
+    RPC
+    {
+        Name = Minus_96_to_Plus_6;
+
+        RPC Curve
+        {
+            Name = Sound::6c9d6d45-2028-446e-9dab-50fb9dc10bed;
+            Property = 0;
+            Sound = 1;
+            Line Color = 4290803844;
+            Viewable = 1;
+
+            Variable Entry
+            {
+                Name = SFXVolume;
+            }
+
+            RPC Point
+            {
+                X = 0.000000;
+                Y = -9600.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 100.000000;
+                Y = 600.000000;
+                Curve = 0;
+            }
+        }
+    }
+
+    RPC
+    {
+        Name = Minus_96_to_Zero;
+
+        RPC Curve
+        {
+            Name = Sound::275cb285-6d7a-48f7-91aa-88f1911d07b0;
+            Property = 0;
+            Sound = 1;
+            Line Color = 4286609195;
+            Viewable = 1;
+
+            Variable Entry
+            {
+                Name = BGMVolume;
+            }
+
+            RPC Point
+            {
+                X = 0.000000;
+                Y = -9600.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 100.000000;
+                Y = 0.000000;
+                Curve = 0;
+            }
+        }
+    }
+
+    RPC
+    {
+        Name = Minus_96_to_Minus_4;
+
+        RPC Curve
+        {
+            Name = Sound::dc53544d-7ca9-49f8-ac39-a2bc7eecafaf;
+            Property = 0;
+            Sound = 1;
+            Line Color = 4279107748;
+            Viewable = 1;
+
+            Variable Entry
+            {
+                Name = BGMVolume;
+            }
+
+            RPC Point
+            {
+                X = 0.000000;
+                Y = -9600.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 100.000000;
+                Y = -400.000000;
+                Curve = 0;
+            }
+        }
+    }
+
+    RPC
+    {
+        Name = Pitch_Doppler;
+
+        RPC Curve
+        {
+            Name = Sound::e54f5866-87c1-472b-8043-4c0ba182645e;
+            Property = 0;
+            Sound = 1;
+            Line Color = 4286657362;
+            Viewable = 1;
+
+            Variable Entry
+            {
+                Name = Distance;
+            }
+
+            RPC Point
+            {
+                X = 12.561577;
+                Y = 600.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 41.379311;
+                Y = 313.183228;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 104.187195;
+                Y = 26.366875;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 155.172409;
+                Y = -112.415245;
+                Curve = 0;
+            }
+        }
+
+        RPC Curve
+        {
+            Name = Sound::886c9183-d429-489d-8dfe-0dbe381712d4;
+            Property = 1;
+            Sound = 1;
+            Line Color = 4293164520;
+            Viewable = 1;
+
+            Variable Entry
+            {
+                Name = DopplerPitchScalar;
+            }
+
+            RPC Point
+            {
+                X = 0.000000;
+                Y = -1200.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 0.985222;
+                Y = -600.000000;
+                Curve = 0;
+            }
+
+            RPC Point
+            {
+                X = 4.000000;
+                Y = 1200.000000;
+                Curve = 0;
+            }
+        }
+    }
+
+    Compression Preset
+    {
+        Name = Compression Preset;
+        Xbox Format Tag = 357;
+        Target Sample Rate = 48000;
+        XMA Quality = 75;
+        Find Best Quality = 0;
+        High Freq Cut = 0;
+        Loop = 0;
+        PC Format Tag = 2;
+        Samples Per Block = 512;
+    }
+}
+
+Wave Bank
+{
+    Name = Background_Music_Demo;
+    Xbox File = Xbox\Background_Music_Demo.xwb;
+    Windows File = Win\Background_Music_Demo.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = Compression Preset;
+    Xbox Bank Last Modified Low = 0;
+    Xbox Bank Last Modified High = 0;
+    PC Bank Last Modified Low = 2408636660;
+    PC Bank Last Modified High = 30303782;
+    Bank Last Revised Low = 710157838;
+    Bank Last Revised High = 30303782;
+
+    Wave
+    {
+        Name = Credits - Project 38;
+        File = AD_Music\Credits-Project 38.wav;
+        Build Settings Last Modified Low = 4209476199;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 192;
+            Play Region Length = 23226624;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1728069051;
+            Last Modified High = 30217927;
+        }
+    }
+
+    Wave
+    {
+        Name = Menu Loop;
+        File = AD_Music\Menu Loop.wav;
+        Build Settings Last Modified Low = 4209516201;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 13415292;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3561072167;
+            Last Modified High = 30220878;
+        }
+    }
+
+    Wave
+    {
+        Name = Generic Loop;
+        File = AD_Music\Generic Loop.wav;
+        Build Settings Last Modified Low = 4209526201;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 7058532;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3109604707;
+            Last Modified High = 30220879;
+        }
+    }
+
+    Wave
+    {
+        Name = Ice Loop;
+        File = AD_Music\Ice Loop.wav;
+        Build Settings Last Modified Low = 4209536202;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 74;
+            Play Region Length = 14817118;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1840489556;
+            Last Modified High = 30301615;
+        }
+    }
+
+    Wave
+    {
+        Name = Lava Loop;
+        File = AD_Music\Lava Loop.wav;
+        Build Settings Last Modified Low = 4291150870;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 48000;
+            Bits Per Sample = 1;
+            Play Region Offset = 190;
+            Play Region Length = 36866508;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1578925740;
+            Last Modified High = 30229957;
+        }
+    }
+
+    Wave
+    {
+        Name = Menu Intro;
+        File = AD_Music\Menu Intro.wav;
+        Build Settings Last Modified Low = 139181753;
+        Build Settings Last Modified High = 30229958;
+        Compression Preset Name = <none>;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 3161566;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1057507333;
+            Last Modified High = 30220879;
+        }
+    }
+
+    Wave
+    {
+        Name = Ice Intro;
+        File = AD_Music\Ice Intro.wav;
+        Build Settings Last Modified Low = 139171753;
+        Build Settings Last Modified High = 30229958;
+        Compression Preset Name = <none>;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 74;
+            Play Region Length = 4941594;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1832989181;
+            Last Modified High = 30301615;
+        }
+    }
+}
+
+Wave Bank
+{
+    Name = Sound_Effects_Demo;
+    Xbox File = Xbox\Sound_Effects_Demo.xwb;
+    Windows File = Win\Sound_Effects_Demo.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = Compression Preset;
+    Xbox Bank Last Modified Low = 0;
+    Xbox Bank Last Modified High = 0;
+    PC Bank Last Modified Low = 2763183310;
+    PC Bank Last Modified High = 30303782;
+    Bank Last Revised Low = 2334477140;
+    Bank Last Revised High = 30303782;
+
+    Wave
+    {
+        Name = Machine_Sound_00;
+        File = SFX\Machine_Sound_00.wav;
+        Build Settings Last Modified Low = 4209946225;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 595052;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3416852314;
+            Last Modified High = 30206900;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_01;
+        File = SFX\Machine_Sound_01.wav;
+        Build Settings Last Modified Low = 4209956226;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 138536;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3657936103;
+            Last Modified High = 30206900;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_02;
+        File = SFX\Machine_Sound_02.wav;
+        Build Settings Last Modified Low = 4209956226;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 82;
+            Play Region Length = 8241516;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2557308836;
+            Last Modified High = 30229624;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_05;
+        File = SFX\Machine_Sound_05.wav;
+        Build Settings Last Modified Low = 4209976227;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 82;
+            Play Region Length = 1442020;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2694506684;
+            Last Modified High = 30229624;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_07;
+        File = SFX\Machine_Sound_07.wav;
+        Build Settings Last Modified Low = 4209986228;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 82;
+            Play Region Length = 1040852;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2772431141;
+            Last Modified High = 30229624;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_08;
+        File = SFX\Machine_Sound_08.wav;
+        Build Settings Last Modified Low = 4209986228;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 82;
+            Play Region Length = 2199908;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2791782247;
+            Last Modified High = 30229624;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_09;
+        File = SFX\Machine_Sound_09.wav;
+        Build Settings Last Modified Low = 4209996228;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 82;
+            Play Region Length = 1964384;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2454138319;
+            Last Modified High = 30246837;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_07_outro;
+        File = SFX\Machine_Sound_07_outro.wav;
+        Build Settings Last Modified Low = 4210016229;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 88;
+            Play Region Length = 199120;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2570311821;
+            Last Modified High = 30229586;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_08_outro;
+        File = SFX\Machine_Sound_08_outro.wav;
+        Build Settings Last Modified Low = 4210016229;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 88;
+            Play Region Length = 226680;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2573061978;
+            Last Modified High = 30229586;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_09_outro;
+        File = SFX\Machine_Sound_09_outro.wav;
+        Build Settings Last Modified Low = 4210036231;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 88;
+            Play Region Length = 88444;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2576292163;
+            Last Modified High = 30229586;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_02_outro;
+        File = SFX\Machine_Sound_02_outro.wav;
+        Build Settings Last Modified Low = 4210046231;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 76;
+            Play Region Length = 205112;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 4274780777;
+            Last Modified High = 30229579;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_03_outro;
+        File = SFX\Machine_Sound_03_outro.wav;
+        Build Settings Last Modified Low = 4210046231;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 76;
+            Play Region Length = 1202880;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 852745220;
+            Last Modified High = 30229585;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_5_outro;
+        File = SFX\Machine_Sound_5_outro.wav;
+        Build Settings Last Modified Low = 4210056232;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 76;
+            Play Region Length = 96304;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1946497779;
+            Last Modified High = 30229585;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_02_intro;
+        File = SFX\Machine_Sound_02_intro.wav;
+        Build Settings Last Modified Low = 4210066232;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 88;
+            Play Region Length = 293384;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2558988932;
+            Last Modified High = 30229624;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_03_intro;
+        File = SFX\Machine_Sound_03_intro.wav;
+        Build Settings Last Modified Low = 4210076233;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 88;
+            Play Region Length = 528096;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2561099053;
+            Last Modified High = 30229624;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_5_intro;
+        File = SFX\Machine_Sound_5_intro.wav;
+        Build Settings Last Modified Low = 4210076233;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 86;
+            Play Region Length = 105144;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2695476739;
+            Last Modified High = 30229624;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_08_intro;
+        File = SFX\Machine_Sound_08_intro.wav;
+        Build Settings Last Modified Low = 4210086233;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 88;
+            Play Region Length = 155052;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2792842308;
+            Last Modified High = 30229624;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_9_intro;
+        File = SFX\Machine_Sound_9_intro.wav;
+        Build Settings Last Modified Low = 4210096234;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 86;
+            Play Region Length = 141764;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2809813279;
+            Last Modified High = 30229624;
+        }
+    }
+
+    Wave
+    {
+        Name = Machine_Sound_07_intro;
+        File = SFX\Machine_Sound_07_intro.wav;
+        Build Settings Last Modified Low = 4210096234;
+        Build Settings Last Modified High = 30229957;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 88;
+            Play Region Length = 105144;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 2773711214;
+            Last Modified High = 30229624;
+        }
+    }
+}
+
+Sound Bank
+{
+    Name = Background_Music_Demo;
+    Xbox File = Xbox\Background_Music_Demo.xsb;
+    Windows File = Win\Background_Music_Demo.xsb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Bank Last Modified Low = 2810855137;
+    Bank Last Modified High = 30303782;
+    Header Last Modified High = 0;
+    Header Last Modified Low = 0;
+
+    Sound
+    {
+        Name = Credits;
+        Volume = 90;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Zero;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Background_Music_Demo;
+                    Bank Index = 0;
+                    Entry Name = Credits - Project 38;
+                    Entry Index = 0;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Menu;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Zero;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Background_Music_Demo;
+                    Bank Index = 0;
+                    Entry Name = Menu Loop;
+                    Entry Index = 1;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Stg0;
+        Volume = -200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Zero;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Background_Music_Demo;
+                    Bank Index = 0;
+                    Entry Name = Generic Loop;
+                    Entry Index = 2;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Stg1;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Zero;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Background_Music_Demo;
+                    Bank Index = 0;
+                    Entry Name = Lava Loop;
+                    Entry Index = 4;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Stg2;
+        Volume = -260;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Minus_4;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Background_Music_Demo;
+                    Bank Index = 0;
+                    Entry Name = Ice Loop;
+                    Entry Index = 3;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = loop_menu;
+        Volume = 0;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Zero;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Background_Music_Demo;
+                    Bank Index = 0;
+                    Entry Name = Menu Intro;
+                    Entry Index = 5;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = loop_potato;
+        Volume = -300;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = Music;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Zero;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Background_Music_Demo;
+                    Bank Index = 0;
+                    Entry Name = Ice Intro;
+                    Entry Index = 6;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Generic_BGM;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Stg0;
+            Index = 2;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 1;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 1;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Lava_BGM;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Stg1;
+            Index = 3;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 1;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 1;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Ice_BGM;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Stg2;
+            Index = 4;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Sound Index = 6;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 5;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 1;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Menu_BGM;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Menu;
+            Index = 1;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Sound Index = 5;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 3;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 1;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Credits_BGM;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Credits;
+            Index = 0;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 1;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 1;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 1000;
+                Fade Out = 1000;
+                Crossfade Type = 0;
+            }
+        }
+    }
+}
+
+Sound Bank
+{
+    Name = Sound_Effects_Demo;
+    Xbox File = Xbox\Sound_Effects_Demo.xsb;
+    Windows File = Win\Sound_Effects_Demo.xsb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Bank Last Modified Low = 2810895163;
+    Bank Last Modified High = 30303782;
+    Header Last Modified High = 0;
+    Header Last Modified Low = 0;
+
+    Sound
+    {
+        Name = Machine_Sound_2;
+        Volume = -1300;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_02;
+                    Entry Index = 2;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Machine_Sound_1;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_01;
+                    Entry Index = 1;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Machine_Sound_5;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_05;
+                    Entry Index = 3;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Machine_Sound_7;
+        Volume = -1500;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_07;
+                    Entry Index = 4;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Machine_Sound_8;
+        Volume = -1500;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_08;
+                    Entry Index = 5;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Machine_Sound_9;
+        Volume = -750;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Loop Count = 255;
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_09;
+                    Entry Index = 6;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = Machine_Sound_0;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_00;
+                    Entry Index = 0;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = outro_7;
+        Volume = -1500;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_07_outro;
+                    Entry Index = 7;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = outro_8;
+        Volume = -1500;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_08_outro;
+                    Entry Index = 8;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_09_outro;
+                    Entry Index = 9;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = outro_9;
+        Volume = -750;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+    }
+
+    Sound
+    {
+        Name = outro_2;
+        Volume = -1300;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_02_outro;
+                    Entry Index = 10;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = outro_3;
+        Volume = -700;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_03_outro;
+                    Entry Index = 11;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = outro_5;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_5_outro;
+                    Entry Index = 12;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = intro_2;
+        Volume = -1300;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_02_intro;
+                    Entry Index = 13;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = intro_3;
+        Volume = -700;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_03_intro;
+                    Entry Index = 14;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = intro_5;
+        Volume = -1200;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_5_intro;
+                    Entry Index = 15;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = intro_8;
+        Volume = -1500;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_08_intro;
+                    Entry Index = 16;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = intro_9;
+        Volume = -750;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_9_intro;
+                    Entry Index = 17;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Sound
+    {
+        Name = intro_7;
+        Volume = -1500;
+        Pitch = 0;
+        Priority = 0;
+
+        Category Entry
+        {
+            Name = machines;
+        }
+
+        RPC Entry
+        {
+            RPC Name = Minus_96_to_Plus_6;
+        }
+
+        Track
+        {
+            Volume = 0;
+            Use Filter = 0;
+
+            Play Wave Event
+            {
+                Break Loop = 0;
+                Use Speaker Position = 0;
+                Use Center Speaker = 1;
+                New Speaker Position On Loop = 1;
+                Speaker Position Angle = 0.000000;
+                Speaker Position Arc = 0.000000;
+
+                Event Header
+                {
+                    Timestamp = 0;
+                    Relative = 0;
+                    Random Recurrence = 0;
+                    Random Offset = 0;
+                }
+
+                Wave Entry
+                {
+                    Bank Name = Sound_Effects_Demo;
+                    Bank Index = 1;
+                    Entry Name = Machine_Sound_07_intro;
+                    Entry Index = 18;
+                    Weight = 255;
+                    Weight Min = 0;
+                }
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Machine_Sound_1;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = Machine_Sound_1;
+            Index = 1;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+
+    Cue
+    {
+        Name = Machine_Sound_2;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Machine_Sound_2;
+            Index = 0;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Sound Index = 13;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 2;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Sound Index = 10;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 6;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Machine_Sound_5;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Machine_Sound_5;
+            Index = 2;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Sound Index = 15;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 2;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Sound Index = 12;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 6;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Machine_Sound_7;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Machine_Sound_7;
+            Index = 3;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Sound Index = 18;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 2;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Sound Index = 7;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 6;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Machine_Sound_8;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Machine_Sound_8;
+            Index = 4;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Sound Index = 16;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 2;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Sound Index = 8;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 6;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Machine_Sound_9;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 3;
+            New Variation on Loop = 0;
+
+            Variable Entry
+            {
+                Name = TrackNumber;
+            }
+        }
+
+        Sound Entry
+        {
+            Name = Machine_Sound_9;
+            Index = 5;
+            Variable Min = 0.000000;
+            Variable Max = 8.000000;
+            Linger = 1;
+        }
+
+        Transition Entry
+        {
+            Sound Index = 17;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 2;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+
+        Transition Entry
+        {
+            Sound Index = 9;
+            Source Marker Min = 0;
+            Source Marker Max = 0;
+            Destination Marker Min = 0;
+            Destination Marker Max = 0;
+            Transition Type = 6;
+            Transition Source = 0;
+            Transition Destination = 0;
+
+            Crossfade
+            {
+                Fade In = 0;
+                Fade Out = 0;
+                Crossfade Type = 0;
+            }
+        }
+    }
+
+    Cue
+    {
+        Name = Machine_Sound_0;
+
+        Variation
+        {
+            Variation Type = 3;
+            Variation Table Type = 1;
+            New Variation on Loop = 0;
+        }
+
+        Sound Entry
+        {
+            Name = Machine_Sound_0;
+            Index = 6;
+            Weight Min = 0;
+            Weight Max = 255;
+        }
+    }
+}
+
+Workspace
+{
+    Name = BGM;
+
+    Sound Entry
+    {
+        Bank Name = Background_Music_Demo;
+        Bank Index = 0;
+        Sound Name = Stg0;
+        Sound Index = 2;
+    }
+
+    Sound Entry
+    {
+        Bank Name = Background_Music_Demo;
+        Bank Index = 0;
+        Sound Name = Stg1;
+        Sound Index = 3;
+    }
+
+    Sound Entry
+    {
+        Bank Name = Background_Music_Demo;
+        Bank Index = 0;
+        Sound Name = Stg2;
+        Sound Index = 4;
+    }
+
+    Sound Entry
+    {
+        Bank Name = Background_Music_Demo;
+        Bank Index = 0;
+        Sound Name = Credits;
+        Sound Index = 0;
+    }
+
+    Sound Entry
+    {
+        Bank Name = Background_Music_Demo;
+        Bank Index = 0;
+        Sound Name = Menu;
+        Sound Index = 1;
+    }
+}
+
+Workspace
+{
+    Name = SFX;
+}
