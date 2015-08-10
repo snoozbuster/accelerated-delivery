@@ -7,7 +7,7 @@ part of high school as part of the then-studio [Two Button Crew][tbc]. We
 self-published the game at <www.accelerateddeliverygame.com> in August of 2013, 
 but fell flat, as so many indies do these days, so now we're opting to publish
 the source code and release the game for free.  
-The game itself is about unconvential mechanisms of package delivery.
+The game itself is about... *unconvential* mechanisms of package delivery.
 
 [at]: www.twitter.com/_snoozbuster
 [jt]: www.twitter.com/jon_fisch
