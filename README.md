@@ -15,7 +15,7 @@ The game itself is about unconvential mechanisms of package delivery.
 [tbc]: www.twobuttoncrew.com
 
 Building the Source
-=======================
+--------------------
 
 To build most of the projects, the [XNA Framework][xna] is required. Unfortunately,
 the XNA Framework is deprecated and only supported on Visual Studio 2010. If you 
@@ -51,7 +51,7 @@ loading.
 [dpsf]: http://xnaparticles.com/Download.php
 
 Building the Installers
-=========================
+---------------------------
 
 The installers are built using [Nullsoft Scriptable Install System][nsis] and the scripts
 to build them are located in `Accelerated_Delivery_Win/NSIS`. One script will build the
@@ -66,12 +66,11 @@ and verify that the .NET Framework 4.5 is installed.
 [nsis]: http://nsis.sourceforge.net/Main_Page
 
 Projects
-===========
+-----------
 
 The solution contains a number of projects which all have different uses and behaviors.
 
-`Accelerated_Delivery.csproj`
----------------------------------
+### `Accelerated_Delivery.csproj`
 
 This project contains the DLL that is the core of the game. Theoretically, you could use solely
 this DLL and create a game very similar to Accelerated Delivery by supplying your own levels,
@@ -89,8 +88,7 @@ decided to make a sequel.
 [ld30]: http://github.com/snoozbuster/ld-30
 [ae]: http://github.com/snoozbuster/apathy-engine
 
-`Accelerated_Delivery_Win.csproj`
--------------------------------------
+### `Accelerated_Delivery_Win.csproj`
 
 This is the project that builds the game executable. It has an associated content project which
 contains and builds all the assets. It won't load at all without the XNA Framework installed; if
@@ -98,34 +96,30 @@ you want to get it to load (although building obviously won't work), comment out
 (`<ProjectTypeGuids>` node) and line 329 (`<Import>` node with a XNA Framework target). You may find
 that `<ProjectTypeGuids>` node may need to be deleted outright.
 
-`Launcher.csproj`
-------------
+### `Launcher.csproj`
 
 This builds the launcher for the game, which handles authentication and updating the game. It can
 even update itself, using a collaboration between itself and the downloader helper.
 
-`Downloader.csproj`
----------------------
+### `Downloader.csproj`
 
 This project builds the downloader application, which can update the game. It's used to avoid
 requiring the launcher to request elevation just to download an update which may or may not exist.
 
-`Decryptor.csproj`
----------------------
+### `Decryptor.csproj`
 
 This project builds a tool that allows you to encrypt and decrypt save files (providing you know 
 the username and password that was used to encrypt it). It's not required to build, but it can
 help when debugging save problems.
 
-`Accelerated_Console.csproj`
--------------------------------
+### `Accelerated_Console.csproj`
 
 This project builds a small text-only spinoff game that focuses on strategy and planning instead of
 timing and multitasking. It's very simple, I made it on a whim one day and didn't go back, so it's
 probably pretty easy.
 
 Licenses
-===========
+----------
 
 The 3D models and 2D assets (but not the textures) are copyright Jonathan Fischer, and placed under 
 a Noncommercial Attribution license. This more or less means that you can use them for anything you
@@ -136,14 +130,14 @@ anyone else know where you got it. The textures, music and sound effects are onl
 for building and playing Accelerated Delivery.
 
 Copyright
-=============
+-----------
 
 3D models are copyright Jonathan Fischer. 2D assets are copyright Alex Van Liew/Jonathan Fischer.
 Level design copyright Simeon King and Scott Campbell. Concept copyright Jonathan Fischer. Code
 copyright Alex Van Liew. Copyright 2011-2015.
 
 DISCLAIMER
-=============
+--------------
 
 A lot of this code is really, really bad. It was written as I learned C# and over a period of
 multiple years without source control. Some of it is decent, some of it is really, really bad.
